@@ -5,24 +5,30 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "embedded-control-framework"
 version = "0.1.0"
-description = "Reusable patterns for embedded control systems on Linux-based hardware."
+description = "Reusable patterns for embedded control: WebSocket routing, sensor monitoring, fluid transfer, and robot arm orchestration."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
 authors = [{ name = "bonsteeve", email = "bonsteeve@users.noreply.github.com" }]
-keywords = ["embedded", "iot", "state-machine", "sensors", "motion-control"]
+keywords = ["embedded", "iot", "websocket", "state-machine", "sensors", "motion-control", "robotics", "fluid-transfer"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries :: Application Frameworks",
     "Topic :: System :: Hardware",
 ]
-dependencies = []
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "websockets>=14.0",
+]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
     "pytest-asyncio>=0.25",
+    "httpx>=0.28",
     "ruff>=0.9",
 ]
 
