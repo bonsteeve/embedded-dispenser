@@ -1,4 +1,3 @@
-![CI](https://github.com/bonsteeve/embedded-dispenser/actions/workflows/ci.yml/badge.svg?branch=main)
 ![Python](https://img.shields.io/badge/python-3.10%20|%203.11%20|%203.12-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 # Embedded Control Framework
